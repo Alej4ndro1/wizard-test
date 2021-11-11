@@ -1,0 +1,361 @@
+/*
+Theme Name: twentytwentyone-child
+Author: Oleksandr Sobchuk
+Template: twentytwentyone
+*/
+
+@import url("../twentytwentyone/style.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+
+body {
+    background-color: #fff;
+
+}
+
+
+
+/*#main{
+	position: relative;
+	height: 1024px;
+	width: 1024px;
+	background: #fff;
+}*/
+
+#bg{
+	position: absolute;
+	width: 770px;
+	height: 470px;
+	left: 127px;
+	top: 197px;
+
+	background: #E5E5E5;
+	border-radius: 6px;
+}
+
+.forms-container {
+  background-color: #E5E5E5;
+  border-radius: 6px;
+  height: 462px;
+  padding: 43px 80px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  position: relative;
+}
+
+.form-content-body {
+  display: none;
+}
+.form-content-body.active {
+  display: block;
+}
+
+/*.form-steps ul {  //backup
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  max-width: 503px;
+}*/
+
+.form-steps ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  max-width: 512px;
+}
+
+.form-steps ul:before {
+  content:  '';
+  display: block;
+  background: url(img/home.png) center center no-repeat;
+  height: 46px;
+  width: 44px;
+}
+
+.form-steps li.active {
+  color: #4F46E5;
+}
+
+/*.form-steps ul span {   //backup
+  display: flex;
+  padding: 13.5px 56px 13.5px 19px;
+  position: relative;
+  height: 100%;
+}*/
+
+.form-steps ul span {
+  display: flex;
+  padding: 13.5px 19px 13.5px 43px;
+  position: relative;
+  height: 100%;
+}
+
+.form-steps ul span img {
+  width: 16px;
+  height: 16px;
+}
+
+.form-steps ul span:before {
+  content:  '';
+  position: absolute;
+  left: -10px;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  background: url(img/Divider.png) no-repeat;
+  background-size: cover;
+}
+
+.form-steps ul li:last-child span:after {
+  display: none;
+}
+
+h2{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  margin: 29px 0;
+  color: #111827;
+}
+
+.form-group .form-control {
+  border: 1px solid #D1D5DB;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.col-form-label {
+  font-size: 15px;
+  color: #4B5563;
+}
+
+.error {
+  display: none;
+  width: 100%;
+  padding: 15px;
+  background-color: red;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.error.active {
+  display: block;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 144px;
+  line-height: 1;
+}
+
+.message {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing:-0.18px;
+  line-height: 1.35em;
+  display: none;
+}
+
+.message-done.active, .message-error.active {
+  display: block;
+}
+
+.form-controls {
+  display: flex;
+  position: absolute;
+  bottom: 43px;
+  left: 80px;
+}
+
+.site .button:not(:hover):not(:active):not(.has-background), button:not(:hover):not(:active):not(.has-background), .site .button:hover, .site .button:active, button:hover, button:active, input[type=submit]:hover, input[type=submit]:active, input[type=reset]:hover, input[type=reset]:active, .wp-block-search .wp-block-search__button:hover, .wp-block-search .wp-block-search__button:active, .wp-block-button .wp-block-button__link:hover, .wp-block-button .wp-block-button__link:active, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:active {
+  width: 96px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  background-color: #4F46E5;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  border-color: transparent;
+}
+
+.site .button.send-email:not(:hover):not(:active):not(.has-background) {
+  width: 160px;
+}
+
+.site .button.send-email:hover, .site .button.send-email:active {
+  width: 160px;
+  height: 44px;
+}
+
+.site .button.send-again:not(:hover):not(:active):not(.has-background) {
+  width: 150px;
+}
+
+.site .button.send-again:hover, .site .button.send-again:active {
+  width: 150px;
+  height: 44px;
+}
+
+
+
+
+.continue{
+  position: absolute;
+  top: 382px;
+  left: 96px;
+  width: 96px;
+  height: 44px;
+
+  background:#fff;
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+.site .button.back:not(:hover):not(:active):not(.has-background), .site .button.back:hover {
+  background-color: #F4F4F4;
+  margin-left: 19px;
+}
+
+.backimg{
+  display: block;
+  margin: 0 auto; 
+}
+
+.btnemail{
+  position: absolute;
+  top: 382px;
+  left: 285px;
+  width: 128px;
+  height: 44px;
+
+  background: #F4F4F4;
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+sup{
+  color: #b0b3b8;
+}
+
+.btnstart{
+  position: absolute;
+  top: 382px;
+  left: 420px;
+  width: 127px;
+  height: 44px;
+
+  background: #F4F4F4;
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+.btnstartimg{
+  display: block;
+  margin: 0 auto; 
+}
+
+.col-form-label {
+  text-align: right;
+  width: 100%;
+}
+
+.formpos{
+  
+}
+
+.formsize{
+  height: 44px;
+  background: #fff;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+/*.breadcrumb{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 16px;
+	
+
+	position: absolute;
+	width: 503px;
+	height: 44px;
+	left: 80px;
+	top: 43px;
+
+	background: #FFFFFF;
+	/* shadow */
+
+	/*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+	border-radius: 6px;*/
+
+
+/*.text{*/
+	/*font-family: Inter;*/
+	/*font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 130%;
+	color: #6B7280;
+}*/
+
+@media (max-width:  991px) {
+  .forms-container {
+    height: auto;
+    min-height: 530px;
+  }
+}
+
+@media (max-width:  767px) {
+  .col-form-label {
+    text-align: left
+  }
+  .forms-container {
+    min-height: 785px;
+    padding: 25px 40px;
+  }
+  .form-controls {
+    left: 40px
+  }
+  .form-steps ul {
+    flex-direction: column;
+  }
+  .form-steps ul li {
+    margin-bottom: 14px
+  }
+  .form-steps ul span {
+    padding: 13.5px 19px 13.5px 60px;
+  }
+  .form-steps ul span:before {
+    left: 10px;
+    top: 11px;
+    height: 30px;
+    width: 27px
+  }
+  h2 {
+    font-size: 30px
+  }
+.price {
+  font-size: 80px
+}
+}
+
+
